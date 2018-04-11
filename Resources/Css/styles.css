@@ -20,6 +20,10 @@ h2 {
   margin: 0.5rem 2rem .5rem 1rem;
 }
 
+p {
+  line-height: 1.2;
+}
+
 /* Header Styles */
 
 .logo {
@@ -144,4 +148,110 @@ footer {
   background-color: azure;
   display: flex;
   align-items: center;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+  .navigation {
+    margin-top: 0rem;
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .header {
+    height: 22rem;
+  }
+
+  .tagline {
+    background-color: white;
+    margin-left: 25%;
+    margin-top: 5rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+    font-weight: bold;
+    padding: 0.75rem 4rem;
+  }
+
+  .middle {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .name-logo span {
+    display: none;
+  }
+
+  .header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .tagline {
+    background-color: white;
+    width: 100%;
+    margin-top: 9rem;
+
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    /* padding: 0.1rem 4rem; */
+  }
+
+  .middle {
+    margin-top: 1.5rem;
+  }
+
+  .icons {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .icon-container {
+    justify-content: flex-start;
+  }
+
+  .icon-container span {
+    margin-top: .75rem;
+    margin-bottom: 1.54rem;
+  }
+
+  .info {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .info-container {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .info-banner {
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    font-size: .77rem;
+    margin-left: .5rem;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+
+
 }
